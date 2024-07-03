@@ -1,0 +1,151 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #d61000;
+  --ifm-color-primary-dark: rgb(214, 16, 0);
+  --ifm-color-primary-darker: rgb(194, 14, 0);
+  --ifm-color-primary-darkest: rgb(174, 12, 0);
+  --ifm-color-primary-light: rgb(230, 56, 41);
+  --ifm-color-primary-lighter: rgb(240, 92, 82);
+  --ifm-color-primary-lightest: rgb(250, 128, 123);
+  --ifm-code-font-size: 95%;
+}
+
+html[data-theme='dark'] {
+  --ifm-background-color: #121212;
+  --ifm-color: #e0e0e0;
+  --ifm-color-secondary: #b0b0b0;
+  --ifm-link-color: #d61000;
+  --ifm-link-hover-color: #e74c3c;
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+html[data-theme='dark'] .docusaurus-highlight-code-line {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* 新しく追加するスタイル */
+/* サイト全体のスタイル */
+body {
+  background-color: var(--ifm-background-color, #ffffff);
+  color: var(--ifm-color, #333333);
+}
+
+/* リンクのスタイル */
+a {
+  color: var(--ifm-link-color, #d61000);
+}
+
+a:hover {
+  color: var(--ifm-link-hover-color, #e74c3c);
+}
+
+/* ボタンのスタイル */
+.button--primary {
+  background-color: #d61000;
+  border-color: #d61000;
+  color: #ffffff;
+}
+
+.button--primary:hover {
+  background-color: #e74c3c;
+  border-color: #e74c3c;
+}
+
+/* ヘッダーのスタイル */
+.heroBanner {
+  background-color: #f39c12;
+  color: #ffffff;
+}
+
+.hero__title {
+  color: #ffffff;
+}
+
+.hero__subtitle {
+  color: #ffffff;
+}
+
+/* サイドバーのスタイル */
+.menu__link {
+  color: var(--ifm-color, #333333); /* 通常のリンク色 */
+}
+
+.menu__link:hover {
+  color: #d61000; /* ホバー時のリンク色 */
+}
+
+/* ダークモードの追加スタイル */
+html[data-theme='dark'] .heroBanner {
+  background-color: #b85c00;
+}
+
+html[data-theme='dark'] .hero__title,
+html[data-theme='dark'] .hero__subtitle {
+  color: #ffffff;
+}
+
+html[data-theme='dark'] .menu__link {
+  color: var(--ifm-color, #e0e0e0); /* 通常のリンク色 */
+}
+
+html[data-theme='dark'] .menu__link:hover {
+  color: #d61000; /* ホバー時のリンク色 */
+}
+
+/* src/css/custom.css */
+:root {
+  --ifm-color-primary: #d61000; /* タイトルの赤色 */
+  --ifm-color-primary-dark: #c10e00;
+  --ifm-color-primary-darker: #b60d00;
+  --ifm-color-primary-darkest: #960b00;
+  --ifm-color-primary-light: #eb1200;
+  --ifm-color-primary-lighter: #f61300;
+  --ifm-color-primary-lightest: #ff2a17;
+  --ifm-code-font-size: 95%;
+}
+
+/* Footerの背景色 */
+.footer {
+  background: linear-gradient(45deg, #1a1a1a, #2c2c2c);
+}
+
+/* ナビゲーションバーのタイトル色を赤に */
+.navbar__title {
+  color: var(--ifm-color-primary);
+}
+
+/* ダークモード用の設定 */
+[data-theme='dark'] {
+  --ifm-color-primary: #ff3b2b;
+  --ifm-color-primary-dark: #ff1f0d;
+  --ifm-color-primary-darker: #ff1100;
+  --ifm-color-primary-darkest: #d30e00;
+  --ifm-color-primary-light: #ff5749;
+  --ifm-color-primary-lighter: #ff6558;
+  --ifm-color-primary-lightest: #ff8f85;
+}
+
+/* 画像のサイズ調整用クラス */
+.custom-img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Download PDFリンクのスタイル */
+.navbar__item--pdf {
+  font-size: 0.8rem; /* 文字サイズを小さく */
+  display: flex;
+  align-items: center;
+}
