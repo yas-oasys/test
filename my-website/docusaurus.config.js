@@ -5,13 +5,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 module.exports = {
   title: 'Animechain.ai',
   tagline: 'Innovative AI Solutions for Anime Production',
-  url: 'https://<your-username>.github.io', // GitHub PagesのURL
-  baseUrl: '/animechain-docs/', // リポジトリ名をベースURLとして設定
+  url: 'https://yas-oasys.github.io', // GitHub PagesのURL
+  baseUrl: '/test/', // リポジトリ名をベースURLとして設定
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: '<your-username>', // GitHubユーザー名
-  projectName: 'animechain-docs', // リポジトリ名
+  organizationName: 'yas-oasys', // GitHubユーザー名
+  projectName: 'test', // リポジトリ名
 
   presets: [
     [
@@ -20,11 +20,11 @@ module.exports = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/<your-username>/animechain-docs/edit/main/website/',
+          editUrl: 'https://github.com/yas-oasys/test/edit/main/website/',
         },
         blog: {
           showReadingTime: true,
-          editUrl: 'https://github.com/<your-username>/animechain-docs/edit/main/website/blog/',
+          editUrl: 'https://github.com/yas-oasys/test/edit/main/website/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
